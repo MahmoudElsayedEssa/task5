@@ -2,7 +2,7 @@
 <resources>
     <dimen name="baseMargin">8dp</dimen>
     <dimen name="smallMargin">4dp</dimen>
-    <dimen name="cornerRadius">16dp</dimen>
+    <dimen name="cornerRadius">12dp</dimen>
     <dimen name="titleTextSize">16sp</dimen>
     <dimen name="normalTextSize">12sp</dimen>
     <dimen name="normalPadding">12dp</dimen>

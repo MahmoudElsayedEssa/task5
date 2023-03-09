@@ -1,141 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:layout_margin="@dimen/baseMargin"
+    app:cardBackgroundColor="@color/offWhite"
+    app:cardCornerRadius="@dimen/cornerRadius"
     tools:context=".MainActivity">
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/image_cardView"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_margin="@dimen/baseMargin"
-        app:cardCornerRadius="@dimen/cornerRadius">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image_picture"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/person" />
-    </androidx.cardview.widget.CardView>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/baseMargin"
-            android:layout_marginStart="@dimen/smallMargin"
-            android:fontFamily="@font/dm_sans_bold"
-            android:gravity="center_vertical"
-            android:text="Ahmed hassan"
-            android:textColor="@color/black"
-            android:textSize="@dimen/titleTextSize" />
-
-        <TextView
-            android:id="@+id/jop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/smallMargin"
-            android:layout_marginBottom="@dimen/baseMargin"
-            android:fontFamily="@font/dm_sans_medium"
-            android:gravity="center_vertical"
-            android:text="Engineer"
-            android:textColor="@color/grey_87"
-            android:textSize="@dimen/normalTextSize" />
-
-        <TextView
-            android:id="@+id/country"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/smallMargin"
-            android:layout_marginBottom="@dimen/baseMargin"
-            android:fontFamily="@font/dm_sans_medium"
-            android:gravity="center_vertical"
-            android:text="UK"
-            android:textColor="@color/grey_38"
-            android:textSize="13sp"
-            app:drawableStartCompat="@drawable/baseline_location_on_24" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/smallMargin"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/reviews_count"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="(150 Reviews)"
-                android:textColor="@color/black"
-                android:textSize="@dimen/normalTextSize" />
-
-            <TextView
-                android:id="@+id/rating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/baseMargin"
-                android:fontFamily="@font/dm_sans_medium"
-                android:gravity="center_vertical"
-                android:text="4.5"
-                android:textColor="@color/black"
-                android:textSize="@dimen/normalTextSize"
-                app:drawableEndCompat="@drawable/baseline_star_24" />
-
-        </LinearLayout>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_cardView"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:layout_margin="@dimen/baseMargin"
-            android:background="@drawable/rounded_corner"
-            android:paddingHorizontal="@dimen/normalPadding"
-            android:paddingVertical="@dimen/smallPadding"
-            android:text="3 hr"
-            android:textColor="@color/white"
-            android:textSize="@dimen/normalTextSize"
-            app:fontFamily="@font/dm_sans" />
+            app:cardCornerRadius="@dimen/cornerRadius">
 
-        <TextView
-            android:id="@+id/nationality"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginEnd="@dimen/baseMargin"
-            android:fontFamily="@font/dm_sans_medium"
-            android:text="Russian"
-            android:textColor="@color/grey_87"
-            android:textSize="@dimen/normalTextSize" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/person" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/last_seen"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="@dimen/baseMargin"
-            android:fontFamily="@font/dm_sans"
-            android:singleLine="true"
-            android:text="5 Days ago"
-            android:textColor="@color/grey_38" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/baseMargin"
+                android:layout_marginStart="@dimen/smallMargin"
+                android:fontFamily="@font/dm_sans_bold"
+                android:gravity="center_vertical"
+                android:text="Ahmed hassan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/titleTextSize" />
+
+            <TextView
+                android:id="@+id/jop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/smallMargin"
+                android:layout_marginBottom="@dimen/baseMargin"
+                android:fontFamily="@font/dm_sans_medium"
+                android:gravity="center_vertical"
+                android:text="Engineer"
+                android:textColor="@color/grey_87"
+                android:textSize="@dimen/normalTextSize" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/smallMargin"
+                android:layout_marginBottom="@dimen/baseMargin"
+                android:fontFamily="@font/dm_sans_medium"
+                android:gravity="center_vertical"
+                android:text="UK"
+                android:textColor="@color/grey_38"
+                android:textSize="13sp"
+                app:drawableStartCompat="@drawable/baseline_location_on_24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/smallMargin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/reviews_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(150 Reviews)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalTextSize" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/baseMargin"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:gravity="center_vertical"
+                    android:text="4.5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalTextSize"
+                    app:drawableEndCompat="@drawable/baseline_star_24" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/baseMargin"
+                android:background="@drawable/rounded_corner"
+                android:paddingHorizontal="@dimen/normalPadding"
+                android:paddingVertical="@dimen/smallPadding"
+                android:text="3 hr"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalTextSize"
+                app:fontFamily="@font/dm_sans" />
+
+            <TextView
+                android:id="@+id/nationality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/baseMargin"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="Russian"
+                android:textColor="@color/grey_87"
+                android:textSize="@dimen/normalTextSize" />
+
+            <TextView
+                android:id="@+id/last_seen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="@dimen/baseMargin"
+                android:fontFamily="@font/dm_sans"
+                android:singleLine="true"
+                android:text="5 Days ago"
+                android:textColor="@color/grey_38" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
+</androidx.cardview.widget.CardView>
 
-
-</LinearLayout>
