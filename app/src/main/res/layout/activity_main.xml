@@ -42,7 +42,7 @@
                 android:layout_marginStart="@dimen/smallMargin"
                 android:fontFamily="@font/dm_sans_bold"
                 android:gravity="center_vertical"
-                android:text="Ahmed hassan"
+                android:text="@string/name"
                 android:textColor="@color/black"
                 android:textSize="@dimen/titleTextSize" />
 
@@ -54,7 +54,7 @@
                 android:layout_marginBottom="@dimen/baseMargin"
                 android:fontFamily="@font/dm_sans_medium"
                 android:gravity="center_vertical"
-                android:text="Engineer"
+                android:text="@string/job"
                 android:textColor="@color/grey_87"
                 android:textSize="@dimen/normalTextSize" />
 
@@ -66,10 +66,11 @@
                 android:layout_marginBottom="@dimen/baseMargin"
                 android:fontFamily="@font/dm_sans_medium"
                 android:gravity="center_vertical"
-                android:text="UK"
+                android:text="@string/country"
+                android:drawablePadding="@dimen/smallPadding"
                 android:textColor="@color/grey_38"
                 android:textSize="13sp"
-                app:drawableStartCompat="@drawable/baseline_location_on_24" />
+                app:drawableStartCompat="@drawable/icon_location" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -82,7 +83,7 @@
                     android:id="@+id/reviews_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="(150 Reviews)"
+                    android:text="@string/reviews_count"
                     android:textColor="@color/black"
                     android:textSize="@dimen/normalTextSize" />
 
@@ -93,7 +94,8 @@
                     android:layout_marginStart="@dimen/baseMargin"
                     android:fontFamily="@font/dm_sans_medium"
                     android:gravity="center_vertical"
-                    android:text="4.5"
+                    android:text="@string/rating"
+                    android:drawablePadding="@dimen/smallPadding"
                     android:textColor="@color/black"
                     android:textSize="@dimen/normalTextSize"
                     app:drawableEndCompat="@drawable/baseline_star_24" />
@@ -115,7 +117,7 @@
                 android:background="@drawable/rounded_corner"
                 android:paddingHorizontal="@dimen/normalPadding"
                 android:paddingVertical="@dimen/smallPadding"
-                android:text="3 hr"
+                android:text="@string/time"
                 android:textColor="@color/white"
                 android:textSize="@dimen/normalTextSize"
                 app:fontFamily="@font/dm_sans" />
@@ -127,7 +129,7 @@
                 android:layout_gravity="end"
                 android:layout_marginEnd="@dimen/baseMargin"
                 android:fontFamily="@font/dm_sans_medium"
-                android:text="Russian"
+                android:text="@string/nationality"
                 android:textColor="@color/grey_87"
                 android:textSize="@dimen/normalTextSize" />
 
@@ -140,7 +142,7 @@
                 android:layout_marginEnd="@dimen/baseMargin"
                 android:fontFamily="@font/dm_sans"
                 android:singleLine="true"
-                android:text="5 Days ago"
+                android:text="@string/last_seen"
                 android:textColor="@color/grey_38" />
 
         </LinearLayout>
